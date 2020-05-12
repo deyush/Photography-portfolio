@@ -1,0 +1,324 @@
+/* 
+COLORS: 
+Black - #0B0C10
+Black grey - #1F2833
+Rat grey - #C5C6C7
+Turquoise - #66FCF1
+Ugly green - #45A29E
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BACKGROUND COLOR */
+body {
+    background-color:#C5C6C7;
+}
+
+/* LOGO */
+.logo {
+    width: 5em;
+    height: auto;
+    margin-left: 1em;
+}
+
+/* NAV POSITION */
+.nav_position{
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 5em;
+}
+/* BACKGROUND IMAGE */
+.background {
+    background-image: url("background.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+}
+/* WHITE WRITING ON NAV */
+nav ul{
+    font-family: 'Righteous', sans-serif;
+}
+nav ul li a {
+    color: #fff;
+}
+nav ul li a:hover{
+    color: #ff9ff3;
+    transition: all 0.3s ease-in-out;
+}
+/* DROPDOWN COLOR */
+.categories{
+    background-color: transparent;
+    border:none;
+}
+.categories a{
+    color:#fff;
+  
+}
+.categories a:hover{
+    background-color: transparent;
+    color: #ff9ff3;
+    font-weight: 2em;  
+}
+
+/* OVERLAY */
+
+#overlay {
+    position: relative;
+}
+
+.overlay {
+    position: relative;
+    width: 100%;
+}
+.image-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1F2833;
+    overflow: hidden;
+    width: 100%;
+    height: 0%;
+    transition: 1s ease;
+}
+.text-overlay{
+    color: #ff9ff3;
+    font-size: 2em;
+    font-family: 'Righteous';
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform:translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.overlay:hover .image-overlay{
+    top: 0;
+    height: 4em;
+    opacity: 0.7;
+}
+/* MARGIN TOB/BOT FIRTS ROW */
+.mtb{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.thumbnail{
+   margin-bottom: 1em;
+}
+/* FOOTER */
+footer {
+    font-family: 'Righteous';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #1F2833;
+    font-size: small;
+}
+footer p{
+    margin-left: 1em;
+    margin-bottom: 0em;
+    color: #ff9ff3;
+}
+.footer ul li {
+    list-style: none;
+    padding-left: 2em;
+    font-size: 1.3em;
+}
+.footer ul li a{
+    color: #C5C6C7;
+}
+.footer ul li a:hover{
+    color: #f8a5c2;
+    transition: all 0.5s ease-in-out;
+}
+.footer {
+    width: 100%;
+    display: contents;
+}
+.footer ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 0em;
+    margin-right: 5em;
+}
+
+/* CONTACT SECTION */
+/* COVER */
+
+.background-contact{
+    background: url(clouds.jpg) no-repeat center;
+    background-size: cover;
+}
+.container h1{
+    font-size:3em;
+    text-align: center;
+    color:#c51162;
+ }
+.line{
+    width: 4em;
+    height: 0.5em;
+    background: #c44569;
+    margin: 1.5em auto;
+}
+.contact-form{
+    max-width: 45%;
+    margin: auto;
+    padding: 0 1em;
+    overflow: hidden;
+}
+.contact-form-text{
+    font-family: 'Righteous';
+    border-radius: 1em;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1em 0;
+    border: 0;  
+    background: #111;
+    padding: 1em 1em;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+}
+.contact-form-text:hover{
+    box-shadow: 0 0 0.3em 0.3em #c44569;
+    transition: ease-in-out 0.6s;
+}
+.contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #f8a5c2;
+}
+textarea.contact-form-text{
+    resize: none;
+    height: 15em;
+}
+.contact-form-btn{
+    font-family: 'Righteous';
+    float: right;
+    border: 0;
+    background: #303952;
+    color: #fff;
+    padding: 1em 2em;
+    margin-bottom:1.5em;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: ease-in 0.6s; 
+}
+.contact-form-btn:hover{
+    background: #c44569;
+}
+
+/* SEASIDE MAIN */
+.seaside-main img{
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%) blur(.7px);
+    padding-bottom: 1.6em;
+    padding-left: 1em;
+    padding-right: 1em;
+    transition: ease-in 0.6s;
+}
+.seaside-main img:hover{
+    filter: initial;
+    transform: scale(1.1);
+}
+.seaside-main img:hover ~.seaside-main-text{
+    opacity: 0;
+    transition: opacity .6s;
+}
+.seaside-main-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Righteous';
+    font-size: 2.5rem;
+    color: #c51162;
+    visibility: visible;
+}
+
+/* CAP AURORA + SUNNY BEACH PAGES */
+.categories-title{
+    font-family: 'Righteous';
+    text-align: center;
+    font-size: 2em;
+    color: #c51162;
+    padding: 1em;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+.categories-title a{
+    color: #c51162;
+    font-size: 0.4em;
+}
+.categories-title a:hover{
+    color: #f78fb3;
+    font-style: normal;
+    transition: ease-in-out 0.7s;
+    text-decoration: none;
+    font-size: 0.5em;   
+}
+.background-categories{
+    background-color: #303952;
+}
+.sea img{
+    transition: 0.4s;
+    width: 100%;
+    height: auto;
+    padding-bottom: 1.6em;
+    filter: grayscale(100%);
+}
+.sea img:hover{
+    filter: initial;
+    transform: scale(1.05);
+}
+
+/* MOUNTAIN PAGE */
+.mountain img{
+    width: 100%;
+    height: auto;
+    padding-bottom: 1.6em;
+    filter: grayscale(100%);
+    transition: ease-in-out 0.4s;
+}
+.mountain img:hover{
+    filter: initial;
+    transform: scale(1.05);
+}
+
+/* NATURE PAGE */
+.nature img{
+    width: 100%;
+    height: auto;
+    padding-bottom: 1.6em;
+    filter: grayscale(100%);
+    transition: ease-in-out 0.4s;
+}
+.nature img:hover{
+    filter: initial;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
